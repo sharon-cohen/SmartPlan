@@ -14,8 +14,8 @@ public:
 	Week(std::map <DayName, DayTask*> tasks) {
 		_tasks = tasks;
 	}
-	void displayWeek();
-	void displayCommand();
+	void displayWeek() {}
+	void displayCommand() {}
 
 private:
 	std::map<DayName, DayTask*> _tasks;

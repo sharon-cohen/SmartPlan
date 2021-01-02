@@ -2,12 +2,13 @@
 #include "view.h"
 #include "Week.h"
 #include "Day.h"
+#include "observer.h"
 #include <vector>
 #include <map>
 #include <string>
 #pragma once
 
-class MyView : public view {
+class MyView : public view, public observer {
 public:
 	MyView();
 	MyView(Week* week, Day* day) {
