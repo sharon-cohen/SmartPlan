@@ -1,0 +1,12 @@
+﻿  maincpp.cpp
+c:\cpp_pro\smarttodo\smarttodo\model.h(12): error C2143: syntax error: missing ';' before '*'
+c:\cpp_pro\smarttodo\smarttodo\model.h(12): error C2433: 'model::DayTask': 'virtual' not permitted on data declarations
+c:\cpp_pro\smarttodo\smarttodo\model.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\cpp_pro\smarttodo\smarttodo\model.h(12): error C2238: unexpected token(s) preceding ';'
+c:\cpp_pro\smarttodo\smarttodo\model.h(15): error C2065: 'DayTask': undeclared identifier
+c:\cpp_pro\smarttodo\smarttodo\model.h(15): error C2059: syntax error: '>'
+c:\cpp_pro\smarttodo\smarttodo\model.h(15): error C2062: type 'unknown-type' unexpected
+c:\cpp_pro\smarttodo\smarttodo\model.h(15): error C2238: unexpected token(s) preceding ';'
+c:\cpp_pro\smarttodo\smarttodo\model.h(27): error C2065: 'DayTask': undeclared identifier
+c:\cpp_pro\smarttodo\smarttodo\model.h(27): error C2059: syntax error: '>'
+c:\cpp_pro\smarttodo\smarttodo\daytask.h(41): warning C4018: '<': signed/unsigned mismatch
