@@ -5,7 +5,7 @@
 #include "mySQLModel.h"
 int main()
 {	
-	mySQLModel* mo = NULL;
+	mySQLModel* mo = nullptr;
 	MyView *v = new MyView();
 	MyController* c= new MyController(mo,v);
 }

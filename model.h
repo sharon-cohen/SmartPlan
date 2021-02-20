@@ -6,7 +6,6 @@
 #include <map>
 #include <string>
 
-
 class model {
 public:
 	model() {}
@@ -23,9 +22,8 @@ public:
 	// virtual void SchedulingAlgorithm(Task* task) = 0;
 	// virtual bool CheckPermanentTask(Task* task) = 0;
 	// virtual void getDBWeekTask() = 0;
-
-
-
-	// std::map<DayName, DayTask*> _tasks;
+	
+// private:
+// 	std::map<DayName, DayTask*> _tasks;
 
 };
