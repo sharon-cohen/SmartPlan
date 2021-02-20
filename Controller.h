@@ -13,11 +13,10 @@ public:
 		_view = view;
 	}
 
-	void start() {}
+	virtual void start() {}
 
-private:
+protected:
 	model* _model;
 	view* _view;
 
 };
-

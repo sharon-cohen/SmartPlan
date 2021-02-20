@@ -1,3 +1,4 @@
+  
 #include <iostream>
 #include <string>
 #pragma once
@@ -29,8 +30,8 @@ class Task {
 public:
 	Task() {}
 	Task(std::string name, Category category) {}
-	std::string getTaskName() {}
-	int getTaskStart() {}
+	std::string getTaskName() { return _name; }
+	std::string getTaskStart() { return _start; }
 	int getTaskEnd() {}
 	Category getTaskCategory() {}
 	DayName getTaskDay() {}
@@ -40,17 +41,14 @@ public:
 	void setTaskEnd(int end) {}
 	void setTaskCategory(Category category) {}
 	void setTaskDay(DayName dayName) {}
-
+	
 
 private:
-	//int _start;
-	//int _end;
+	std::string _start;
+	std::string _end;
 	std::string _name;
 	Category _category;
-	//DayName _dayName;
+	DayName _dayName;
 
 
 };
-
-
-
