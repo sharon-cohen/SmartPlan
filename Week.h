@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include <string>
@@ -5,12 +6,15 @@
 #include<memory>
 #include "DayTask.h"
 
-#pragma once
+
 
 class Week {
 
 public:
-	Week(){}
+	Week(){
+		std:: cout<<"dfdfsdf";
+
+	}
 	Week(std::map <DayName, DayTask*> tasks) {
 		_tasks = tasks;
 	}
