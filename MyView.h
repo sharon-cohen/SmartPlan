@@ -42,13 +42,15 @@ public:
 		}
 	}
 	void displayDay(Day* day) {
-		day->displayCommand();
+		
 		day->displayDay(_week->getCurrentNumDay());
+		day->displayCommand();
 	
 	}
 	void displayWeek() {
-		_week->displayCommand();
+	
 		_week->displayWeek();
+		_week->displayCommand();
 	
 	};
 private:

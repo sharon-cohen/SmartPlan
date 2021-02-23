@@ -33,7 +33,7 @@ public:
 	}
 	std::string getNameTaskByStartHour(std::string startHour) {
 		if(_dayTask!=nullptr)
-			return _dayTask->getNameTaskByTimeStart(startHour);
+			return _dayTask->getNameTaskByTimeStart(atoi(startHour.c_str()));
 		else { return "          "; }
 			
 	}
@@ -43,7 +43,7 @@ public:
 		std::cout << "\n----------------------------------------\n";
 		if (_dayTask != nullptr) {
 			for (int i = 0; i < _hour->getNumHour(); i++) {
-				std::cout << _hour->getNameTimeByIndex(i) << _dayTask->getNameTaskByTimeStart(_hour->getStartTimeByIndex(i)) << "\n\n";
+				std::cout << _hour->getNameTimeByIndex(i) << _dayTask->getNameTaskByTimeStart(atoi(_hour->getStartTimeByIndex(i).c_str())) << "\n\n";
 			}
 			
 		}

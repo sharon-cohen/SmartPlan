@@ -37,7 +37,7 @@ public:
 			return  name.substr(0, 10);
 		}
 	}
-	std::string getNameTaskByTimeStart(std::string startTime) {
+	std::string getNameTaskByTimeStart(int startTime) {
 		for (int i = 0; i < _tasks.size(); i++) {
 			if (startTime == _tasks[i]->getTaskStart()) {
 				return getNameTaskForPrint(_tasks[i]->getTaskName());

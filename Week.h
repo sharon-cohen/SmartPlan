@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-
+#pragma once
 #include <conio.h>
 #include <chrono>
 #include <time.h> 
@@ -93,6 +93,7 @@ public:
 	}
 	void displayCommand() {
 		std::cout << "Enter d to display one Day" << std::endl;
+		std::cout << "Enter a to add task" << std::endl;
 	}
 	Day* getDayTaskByNameOfDay(DayName dayName) {
 		return _tasks[dayName];
@@ -107,3 +108,4 @@ private:
 	int _currentmonth;
 	int _numberOfDays;
 };
+

@@ -1,14 +1,19 @@
 #pragma once
 #include "Controller.h"
-
+#include "OccasionalTask.h"
+#include "PermanentTask.h"
+#include "mySQLModel.h"
 class MyController : Controller {
 public:
 	MyController(model* model, view* view) : Controller(model, view) {
+		
 		start();
 	}
 
 	virtual void start() {
 		std::string input;
+		std::string inputB;
+		std::string req;
 		input = _view->getInputUser();
 		while (input != "q") {
 			if (input == "w") {
@@ -17,7 +22,21 @@ public:
 			if (input == "d") {
 				_view->changeTypeView(DAY);
 			}
+			if (input == "a") {
+				_view->printReqUser("choose o or p task");
+				inputB = _view->getInputUser();
+			}
+			if (inputB == "o") {
+				_view->printReqUser("enter <name>,<catagory>,<dayName>,<deadline>:\n");
+				_model->setTask(Occasional, _view->getInputUser());
+					
+			}
+			if (inputB == "p") {
+				_view->printReqUser("enter <name>,<catagory>,<dayName>,<star hour>,<end hour>:\n");
+				_model->setTask(Permanent, _view->getInputUser());
+			}
 			input = _view->getInputUser();
+		
 		}
 	
 	}

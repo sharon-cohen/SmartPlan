@@ -6,11 +6,13 @@
 #include <map>
 #include <string>
 
+class Week;
 class model {
 public:
 	model() {}
 	// virtual DayTask* getTask(DayName d, std::string s) = 0;
-	// virtual void setTask(DayName d, Task* task) = 0;
+	virtual void setTask(TYPE_TASK typeTask, std::string inputUser) = 0;
+	virtual ~model() {}
 	// virtual void deleteTask(std::string s, DayName d) = 0;
 	// virtual std::map<DayName, DayTask*> getWeekTasks() = 0;
 	// virtual void updateDayPermanentTask(Task* Ptask, DayName d) = 0;
@@ -23,7 +25,8 @@ public:
 	// virtual bool CheckPermanentTask(Task* task) = 0;
 	// virtual void getDBWeekTask() = 0;
 	
-// private:
+private:
+Week* w;
 // 	std::map<DayName, DayTask*> _tasks;
 
 };
