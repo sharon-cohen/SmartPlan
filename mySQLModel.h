@@ -6,15 +6,29 @@
 
 #pragma once
 
-
+class PermanentTask;
+class OccasionalTask;
 class mySQLModel : public model , public observable {
 public:
 	mySQLModel():model(),observable(){
 		
 		myfile.open ("example1.txt" );
-		
-
 	}
+
+	    void saveTaskToFile(std::string name, int end, int start, Category category, DayName day, std::string strDay, std::string strCat)
+    {
+        myfile << "New Task:" << std::endl;
+        myfile << name << std::endl;
+        myfile << end << std::endl;
+        myfile << start << std::endl;
+        myfile << category << std::endl;
+        myfile << day << std::endl;
+        myfile << strDay << std::endl;
+        myfile << strCat << std::endl;
+        myfile << "---------" << std::endl;
+
+    }
+	
 	virtual void setTask(TYPE_TASK typeTask, std::string inputUser){
 		
 		delete  _hendleTask ;
@@ -48,9 +62,6 @@ public:
 			std:: cout<<mergeTask;
 
 		}
-		
-			
-		
 		
 	}
 	virtual ~mySQLModel() {myfile.close();}
