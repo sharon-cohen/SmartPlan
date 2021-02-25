@@ -2,7 +2,7 @@
 #include <iomanip>
 #include "MyView.h"
 #include "MyController.h"
-#include "mySQLModel.h"
+#include "mySQLModel.cpp"
 int main()
 {	
 	mySQLModel* mo = new mySQLModel();
