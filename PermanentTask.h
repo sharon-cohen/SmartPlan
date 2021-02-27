@@ -7,6 +7,13 @@
 
 class PermanentTask : public Task {
 public:
+	PermanentTask():Task(){
+	_name= "task";
+	_end=3;
+	_start=2;
+	_category=Sport;
+	_dayName=Sunday;
+	}
 	PermanentTask(int start, int end, std::string name, Category category, DayName dayName) : Task(name, category) {
 		_dayName = dayName;
 		_start = start;

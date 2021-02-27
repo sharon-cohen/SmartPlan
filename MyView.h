@@ -12,6 +12,7 @@
 class MyView : public view , public observer {
 public:
 
+	
 	MyView(Week* week) :view(), observer() {
 		_week = week;
 		
@@ -30,6 +31,9 @@ public:
 		displayTask(Sunday);
 		
 
+	}
+	void setWeek(Week * week){
+		_week=week;
 	}
 	virtual void displayTask(DayName dayName) {
 		system("cls");
