@@ -16,7 +16,7 @@ public:
 	// virtual DayTask* getTask(DayName d, std::string s) = 0;
 	virtual void setTask(TYPE_TASK typeTask, std::string inputUser) = 0;
 	virtual ~model() {}
-	 PermanentTask* getTask(){
+	virtual Task* getTask(){
 		PermanentTask * p= new PermanentTask();
 		PermanentTask * p1= new PermanentTask();
 		PermanentTask * p2= new PermanentTask();

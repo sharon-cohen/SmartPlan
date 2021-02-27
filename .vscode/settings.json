@@ -46,6 +46,8 @@
 		"ratio": "cpp",
 		"xlocmon": "cpp",
 		"xloctime": "cpp",
-		"fstream": "cpp"
+		"fstream": "cpp",
+		"cctype": "cpp",
+		"concepts": "cpp"
 	}
 }

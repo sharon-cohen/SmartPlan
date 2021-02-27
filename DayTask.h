@@ -14,7 +14,16 @@ public:
 	DayTask(std::vector<Task*> tasks) {
 		_tasks=tasks;
 	}
-	DayTask() {}
+	DayTask() {
+		PermanentTask * p= new PermanentTask();
+		PermanentTask * p1= new PermanentTask();
+		PermanentTask * p2= new PermanentTask();
+		_tasks.push_back(p);
+		_tasks.push_back(p1);
+		_tasks.push_back(p2);
+
+
+	}
 	void setTask(Task* t) {}
 	Task* getTask(int time) {}
 	std::vector<Task*> getTaskDay() {}

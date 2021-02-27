@@ -6,6 +6,19 @@
 class MyController : Controller {
 public:
 	MyController(model* model, view* view) : Controller(model, view) {
+		std::map<DayName, Day*> tasks;
+		tasks[Sunday]= new Day(Sunday);
+		tasks[Monday] = new Day(Monday);
+		tasks[Tuesday] = new Day(Tuesday);
+		tasks[Wednesday] = new Day(Wednesday);
+		tasks[Thursday] = new Day(Thursday);
+		tasks[Friday] = new Day(Friday);
+		tasks[Saturday] = new Day(Saturday);
+		  
+		Week * week= new Week(tasks);
+		if (typeid(*_view) == typeid(MyView)) {
+			((MyView*)_view)->setWeek(week);
+	}
 		
 		start();
 	}

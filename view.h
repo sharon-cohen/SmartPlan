@@ -16,6 +16,7 @@ enum TypeView
 class view {
 protected:
 	TypeView _typeView;
+	
 public:
 	view() {
 		_typeView = DAY;

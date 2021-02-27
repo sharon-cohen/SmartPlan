@@ -22,7 +22,7 @@ public:
 	}
 	
 	Day(DayName dayName) {
-		_dayTask = nullptr;
+		_dayTask =new DayTask();
 		_hour = new fullHour();
 		_nameDay = Sunday;
 	}

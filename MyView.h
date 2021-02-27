@@ -18,16 +18,9 @@ public:
 		
 	}
 	MyView():view(), observer(){
-		std::map<DayName, Day*> tasks;
 		
-		tasks[Sunday]= new Day(Sunday);
-		tasks[Monday] = new Day(Monday);
-		tasks[Tuesday] = new Day(Tuesday);
-		tasks[Wednesday] = new Day(Wednesday);
-		tasks[Thursday] = new Day(Thursday);
-		tasks[Friday] = new Day(Friday);
-		tasks[Saturday] = new Day(Saturday);
-		_week = new Week(tasks);
+		
+		
 		displayTask(Sunday);
 		
 
